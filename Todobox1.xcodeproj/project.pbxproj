@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		76BC17F71ED31BC800F47E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC17F61ED31BC800F47E72 /* AppDelegate.swift */; };
-		76BC17F91ED31BC800F47E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC17F81ED31BC800F47E72 /* ViewController.swift */; };
+		76BC17F91ED31BC800F47E72 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC17F81ED31BC800F47E72 /* TaskListViewController.swift */; };
 		76BC17FC1ED31BC800F47E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC17FA1ED31BC800F47E72 /* Main.storyboard */; };
 		76BC17FE1ED31BC800F47E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BC17FD1ED31BC800F47E72 /* Assets.xcassets */; };
 		76BC18011ED31BC800F47E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC17FF1ED31BC800F47E72 /* LaunchScreen.storyboard */; };
+		76BC18091ED5A22700F47E72 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC18081ED5A22700F47E72 /* Task.swift */; };
+		76BC180B1ED5B45800F47E72 /* TaskEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC180A1ED5B45800F47E72 /* TaskEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76BC17F31ED31BC800F47E72 /* Todobox1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todobox1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BC17F61ED31BC800F47E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76BC17F81ED31BC800F47E72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76BC17F81ED31BC800F47E72 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		76BC17FB1ED31BC800F47E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76BC17FD1ED31BC800F47E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76BC18001ED31BC800F47E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76BC18021ED31BC800F47E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BC18081ED5A22700F47E72 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		76BC180A1ED5B45800F47E72 /* TaskEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				76BC17F61ED31BC800F47E72 /* AppDelegate.swift */,
-				76BC17F81ED31BC800F47E72 /* ViewController.swift */,
+				76BC17F81ED31BC800F47E72 /* TaskListViewController.swift */,
+				76BC180A1ED5B45800F47E72 /* TaskEditViewController.swift */,
+				76BC18081ED5A22700F47E72 /* Task.swift */,
 				76BC17FA1ED31BC800F47E72 /* Main.storyboard */,
 				76BC17FD1ED31BC800F47E72 /* Assets.xcassets */,
 				76BC17FF1ED31BC800F47E72 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BC17F91ED31BC800F47E72 /* ViewController.swift in Sources */,
+				76BC17F91ED31BC800F47E72 /* TaskListViewController.swift in Sources */,
+				76BC18091ED5A22700F47E72 /* Task.swift in Sources */,
 				76BC17F71ED31BC800F47E72 /* AppDelegate.swift in Sources */,
+				76BC180B1ED5B45800F47E72 /* TaskEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +269,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Todobox1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.Todobox1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Todobox1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.Todobox1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +309,7 @@
 				76BC18071ED31BC800F47E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
